@@ -1,0 +1,1694 @@
+{
+  "intents": [
+    {
+      "intent": "comprar",
+      "examples": [
+        {
+          "text": "compra"
+        },
+        {
+          "text": "então quero"
+        },
+        {
+          "text": "estou precisando"
+        },
+        {
+          "text": "eu estou procurando"
+        },
+        {
+          "text": "eu gostaria de comprar"
+        },
+        {
+          "text": "eu quero comprar"
+        },
+        {
+          "text": "eu quero ver"
+        },
+        {
+          "text": "gostaria de adquirir"
+        },
+        {
+          "text": "me dá"
+        },
+        {
+          "text": "na loja"
+        },
+        {
+          "text": "necessito de"
+        },
+        {
+          "text": "o que tem para comer"
+        },
+        {
+          "text": "o que você tem?"
+        },
+        {
+          "text": "o que você vende?"
+        },
+        {
+          "text": "preciso"
+        },
+        {
+          "text": "procuro por um"
+        },
+        {
+          "text": "Queria comprar"
+        },
+        {
+          "text": "quero"
+        },
+        {
+          "text": "quero comer"
+        },
+        {
+          "text": "quero comprar"
+        },
+        {
+          "text": "quero então"
+        },
+        {
+          "text": "quero ver"
+        },
+        {
+          "text": "to procurando"
+        },
+        {
+          "text": "ver seus"
+        }
+      ]
+    },
+    {
+      "intent": "informar",
+      "examples": [
+        {
+          "text": "ajuda na compra"
+        },
+        {
+          "text": "como"
+        },
+        {
+          "text": "funcionamento"
+        },
+        {
+          "text": "gostaria de saber"
+        },
+        {
+          "text": "gostaria de uma informação"
+        },
+        {
+          "text": "informação"
+        },
+        {
+          "text": "informação da loja"
+        },
+        {
+          "text": "Informações"
+        },
+        {
+          "text": "onde fica a loja"
+        },
+        {
+          "text": "Poderia me informar"
+        },
+        {
+          "text": "preciso de informação"
+        },
+        {
+          "text": "Preciso de uma informação"
+        },
+        {
+          "text": "quero saber sobre"
+        },
+        {
+          "text": "saber mais"
+        },
+        {
+          "text": "saber mais detalhes"
+        },
+        {
+          "text": "tenho dúvida"
+        }
+      ]
+    },
+    {
+      "intent": "sair",
+      "examples": [
+        {
+          "text": "Ainda não terminou?"
+        },
+        {
+          "text": "Com licença, tenho que ir agora"
+        },
+        {
+          "text": "Desculpe ter ocupado tanto do seu tempo. Eu sei que estamos os dois ocupados e acho que tenho que dizer tchau por ora.."
+        },
+        {
+          "text": "Estou cansado de digitar agora. Obrigado e adeus"
+        },
+        {
+          "text": "Estou indo embora."
+        },
+        {
+          "text": "Eu estou indo agora. Tenha um bom dia. Tchau"
+        },
+        {
+          "text": "Eu preciso correr porque acabei de notar que estou atrasado para o meu próximo compromisso"
+        },
+        {
+          "text": "Falo contigo depois. Tchau"
+        },
+        {
+          "text": "Me tire daqui."
+        },
+        {
+          "text": "Muito obrigado pelo seu tempo. Me desculpe, mas eu tenho que ir. Até logo!"
+        },
+        {
+          "text": "Obrigada, tchau!"
+        },
+        {
+          "text": "Obrigado pela sua ajuda, mas ainda estou confuso…tchau"
+        },
+        {
+          "text": "Obrigado por responder todas as minhas perguntas. Tchau"
+        },
+        {
+          "text": "Ok, isso é tudo que eu preciso para agora."
+        },
+        {
+          "text": "pare esta sessão agora..Tchau"
+        },
+        {
+          "text": "quero cancelar"
+        },
+        {
+          "text": "Quero encerrar a conversa, obrigado."
+        },
+        {
+          "text": "quero sair"
+        },
+        {
+          "text": "reiniciar"
+        },
+        {
+          "text": "sair"
+        },
+        {
+          "text": "Te desejo o melhor de sorte..Tchau"
+        },
+        {
+          "text": "Tudo bem, eu tenho tudo o que eu precisava"
+        },
+        {
+          "text": "Vamos dar uma pausa e tentar novamente mais tarde..Tchau"
+        },
+        {
+          "text": "vejo depois!"
+        },
+        {
+          "text": "Vejo você mais tarde."
+        },
+        {
+          "text": "Você foi de pouca ajuda, por isso não quero falar com você mais, tchau"
+        },
+        {
+          "text": "Volto mais tarde."
+        },
+        {
+          "text": "Vou sair agora. Tchau"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "bebidas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "refrigerante",
+          "synonyms": [
+            "refri",
+            "soda"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "suco",
+          "synonyms": [
+            "suco natural"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "cep",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "cep",
+          "patterns": [
+            "[0-9]{5}-[0-9]{3}"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "resposta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "afirmativa",
+          "synonyms": [
+            "afirmativo",
+            "certa",
+            "certo",
+            "claro",
+            "com certeza",
+            "ok",
+            "positivo",
+            "sim",
+            "também",
+            "yes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "indiferente",
+          "synonyms": [
+            "não sei",
+            "qualquer",
+            "qualquer um",
+            "qualquer uma",
+            "Sei lá",
+            "talvez",
+            "tanto faz",
+            "todas",
+            "todos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "negativa",
+          "synonyms": [
+            "não",
+            "negativo",
+            "nenhum",
+            "nenhuma",
+            "no",
+            "nop",
+            "not",
+            "sem"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sabor_bebidas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "acerola",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "caju",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "coca cola",
+          "synonyms": [
+            "coca"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fanta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fanta laranja",
+          "synonyms": [
+            "laranja"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fanta uva",
+          "synonyms": [
+            "uva"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "guarana",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sabor_salgado",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "carne",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "frango",
+          "synonyms": [
+            "galinha"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "presunto e mucarela",
+          "synonyms": [
+            "presunto e mussarela",
+            "queijo e presunto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "queijo",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "salgado",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "coxinha",
+          "synonyms": [
+            "cochinha"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "enroladinho",
+          "synonyms": [
+            "enrolado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pastel",
+          "synonyms": [
+            "pasteis"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_entrega",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "delivery",
+          "synonyms": [
+            "quero receber na minha casa",
+            "traz ai",
+            "traz até aqui",
+            "trazer em casa",
+            "traz para mim",
+            "traz pra mim",
+            "vem aqui",
+            "vou quer em casa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "drive trhu",
+          "synonyms": [
+            "ai",
+            "na lachonete",
+            "na loja",
+            "vou ai buscar",
+            "vou buscar",
+            "vou comer ai",
+            "vou na lanchonete",
+            "vou retirar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_informacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "contato",
+          "synonyms": [
+            "fica longe",
+            "onde fica",
+            "qual o endereço"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "horario",
+          "synonyms": [
+            "funciona domingo",
+            "funciona hoje",
+            "qual horario abre",
+            "qual horario fecha"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_4_1647633570060",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_10_1647625852461_copy",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você não sabe?! Tudo bem! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Vendemos esses salgados abaixo:",
+            "options": [
+              {
+                "label": "Coxinha",
+                "value": {
+                  "input": {
+                    "text": "coxinha"
+                  }
+                }
+              },
+              {
+                "label": "Enroladinho",
+                "value": {
+                  "input": {
+                    "text": "enroladinho"
+                  }
+                }
+              },
+              {
+                "label": "Pastel",
+                "value": {
+                  "input": {
+                    "text": "pastel"
+                  }
+                }
+              }
+            ],
+            "description": "Escolha um.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_10_1647625631981_copy",
+      "conditions": "anything_else",
+      "event_name": "nomatch",
+      "dialog_node": "handler_10_1647625852461_copy",
+      "previous_sibling": "handler_6_1647628575631_copy"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1647632263520",
+      "context": {
+        "tipo_entrega": "@tipo_entrega"
+      },
+      "conditions": "@tipo_entrega",
+      "event_name": "input",
+      "dialog_node": "handler_10_1647632263524"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1647626874415",
+      "context": {
+        "bebidas": "@bebidas"
+      },
+      "conditions": "@bebidas",
+      "event_name": "input",
+      "dialog_node": "handler_1_1647626874417"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_1_1647628828670_copy",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O pastel é recheio de queijo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_10_1647625631981_copy",
+      "context": {
+        "sabor_salgado": "queijo"
+      },
+      "conditions": "$salgado==\"pastel\" && !@sabor_salgado",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1647628828670_copy",
+      "previous_sibling": "handler_5_1647628620319_copy"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok. Te espero aqui! Seu lanche ficará pronto em 10m."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_4_1647632263520",
+      "conditions": "$tipo_entrega==\"drive trhu\"",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1647632569004",
+      "previous_sibling": "handler_8_1647632263524"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1647625631981_copy",
+      "context": {
+        "sabor_salgado": "frango"
+      },
+      "conditions": "$salgado==\"coxinha\"",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1647641734150",
+      "previous_sibling": "handler_1_1647628828670_copy"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "De qual recheio?",
+            "options": [
+              {
+                "label": "Presunto e Muçarela",
+                "value": {
+                  "input": {
+                    "text": "presunto e mucarela"
+                  }
+                }
+              },
+              {
+                "label": "Frango",
+                "value": {
+                  "input": {
+                    "text": "frango"
+                  }
+                }
+              },
+              {
+                "label": "Queijo",
+                "value": {
+                  "input": {
+                    "text": "queijo"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1647628531568",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_2_1647628531571",
+      "previous_sibling": "handler_7_1647628531571"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Qual sabor do $bebidas:",
+            "options": [
+              {
+                "label": "Acerola",
+                "value": {
+                  "input": {
+                    "text": "acerola"
+                  }
+                }
+              },
+              {
+                "label": "Laranja",
+                "value": {
+                  "input": {
+                    "text": "fanta laranja"
+                  }
+                }
+              },
+              {
+                "label": "Uva ",
+                "value": {
+                  "input": {
+                    "text": "fanta uva"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_1_1647631307994",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_2_1647631307998",
+      "previous_sibling": "handler_4_1647631307998"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1647631307994",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "anything_else",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1647631622023",
+      "previous_sibling": "handler_2_1647631307998"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1647632629358",
+      "conditions": "anything_else",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1647632796380",
+      "previous_sibling": "handler_3_1647632766314"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ei"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1647633678193",
+      "conditions": "$tipo_informacao==\"horario\"",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1647636618764",
+      "previous_sibling": "handler_4_1647633678195"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_4_1647632263520",
+      "context": {
+        "cep": "@cep.literal",
+        "tipo_entrega": "delivery"
+      },
+      "conditions": "@cep",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1647641336814",
+      "previous_sibling": "handler_1_1647632569004"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1647625631981_copy",
+      "context": {
+        "sabor_salgado": "queijo"
+      },
+      "conditions": "$salgado==\"pastel\"",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1647641800215",
+      "previous_sibling": "handler_1_1647641734150"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi. "
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1647626874415",
+      "conditions": "anything_else",
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1647627182085",
+      "previous_sibling": "handler_3_1647627772373"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1647626874415",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "@resposta:negativa",
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1647627772373",
+      "previous_sibling": "handler_5_1647626874417"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1647631660613",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "anything_else",
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1647631812804",
+      "previous_sibling": "handler_9_1647631660615"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1647632629358",
+      "context": {
+        "cep": "@cep.literal"
+      },
+      "conditions": "@cep",
+      "event_name": "input",
+      "dialog_node": "handler_3_1647632629361"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cep inválido! Digite novamente."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1647632629358",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "!@cep",
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1647632766314",
+      "previous_sibling": "handler_8_1647632629361"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1647631307994",
+      "context": {
+        "sabor_suco": "@sabor_bebidas"
+      },
+      "conditions": "@sabor_bebidas",
+      "event_name": "input",
+      "dialog_node": "handler_4_1647631307998"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informação de horário ou localização?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1647633678193",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1647633678195",
+      "previous_sibling": "handler_5_1647633678195"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vai querer um suco ou refrigerante?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1647626874415",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_5_1647626874417",
+      "previous_sibling": "handler_1_1647626874417"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_5_1647628620319_copy",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A coxinha é recheada de frango."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_10_1647625631981_copy",
+      "context": {
+        "sabor_salgado": "frango"
+      },
+      "conditions": "$salgado==\"coxinha\" && !@sabor_salgado",
+      "event_name": "filled",
+      "dialog_node": "handler_5_1647628620319_copy",
+      "previous_sibling": "handler_10_1647625852461_copy"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1647633678193",
+      "context": {
+        "tipo_informacao": "@tipo_informacao"
+      },
+      "conditions": "@tipo_informacao",
+      "event_name": "input",
+      "dialog_node": "handler_5_1647633678195"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "oi"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1647633678193",
+      "conditions": "$tipo_informacao==\"contato\"",
+      "event_name": "nomatch",
+      "dialog_node": "handler_5_1647636715894",
+      "previous_sibling": "handler_2_1647636618764"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A lanchonete se localiza no RJ, na rua: Rua Almirante Gonçalves nº 15. "
+              }
+            ],
+            "response_type": "text"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_6_1647636838001",
+      "context": {
+        "tipo_informacao": "null"
+      },
+      "conditions": "$tipo_informacao==\"contato\"",
+      "event_name": "filled",
+      "dialog_node": "handler_5_1647636869960",
+      "previous_sibling": "handler_8_1647636909273"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_6_1647625632004_copy",
+      "output": {},
+      "parent": "slot_10_1647625631981_copy",
+      "context": {
+        "salgado": "@salgado"
+      },
+      "conditions": "@salgado",
+      "event_name": "input",
+      "dialog_node": "handler_6_1647625632004_copy"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_6_1647628575631_copy",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_10_1647625631981_copy",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "@resposta:negativa",
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1647628575631_copy",
+      "previous_sibling": "handler_9_1647625632004_copy"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1647628531568",
+      "context": {
+        "sabor_salgado": "@sabor_salgado"
+      },
+      "conditions": "@sabor_salgado",
+      "event_name": "input",
+      "dialog_node": "handler_7_1647628531571"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_6_1647636838001",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1647636838003",
+      "previous_sibling": "handler_9_1647636838003"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi. Escolha um sabor"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1647628531568",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "anything_else",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1647631162076",
+      "previous_sibling": "handler_2_1647628531571"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1647631660613",
+      "context": {
+        "sabor_refrigerante": "@sabor_bebidas"
+      },
+      "conditions": "@sabor_bebidas",
+      "event_name": "input",
+      "dialog_node": "handler_8_1647631660615"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vai retira na lanchonete ou levamos até você?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1647632263520",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_8_1647632263524",
+      "previous_sibling": "handler_10_1647632263524"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual o seu cep? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_9_1647632629358",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_8_1647632629361",
+      "previous_sibling": "handler_3_1647632629361"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1647633678193",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "anything_else",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1647636337556",
+      "previous_sibling": "handler_5_1647636715894"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A lanchonete funciona de Terça a Domingo, nos horários de 13h às 23h."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_6_1647636838001",
+      "context": {
+        "tipo_informacao": "null"
+      },
+      "conditions": "$tipo_informacao==\"horario\"",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1647636909273",
+      "previous_sibling": "handler_7_1647636838003"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_9_1647625632004_copy",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual tipo de salgado você quer?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_10_1647625631981_copy",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_9_1647625632004_copy",
+      "previous_sibling": "handler_6_1647625632004_copy"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Qual sabor do $bebidas:",
+            "options": [
+              {
+                "label": "Coca Cola",
+                "value": {
+                  "input": {
+                    "text": "coca cola"
+                  }
+                }
+              },
+              {
+                "label": "Fanta Uva",
+                "value": {
+                  "input": {
+                    "text": "fanta uva"
+                  }
+                }
+              },
+              {
+                "label": "Fanta Laranja",
+                "value": {
+                  "input": {
+                    "text": "fanta laranja"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1647631660613",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_9_1647631660615",
+      "previous_sibling": "handler_8_1647631660615"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem! Até mais!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1647625603515",
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "#sair",
+      "event_name": "generic",
+      "dialog_node": "handler_9_1647633506812"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1647636838001",
+      "context": {
+        "tipo_informacao": "@tipo_informacao"
+      },
+      "conditions": "@tipo_informacao",
+      "event_name": "input",
+      "dialog_node": "handler_9_1647636838003"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_4_1647632263520",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "anything_else",
+      "event_name": "nomatch",
+      "dialog_node": "handler_9_1647641383979",
+      "previous_sibling": "handler_2_1647641336814"
+    },
+    {
+      "type": "frame",
+      "title": "Comprar",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#comprar",
+      "digress_in": "not_available",
+      "dialog_node": "node_3_1647625603515",
+      "digress_out": "allow_all",
+      "previous_sibling": "Bem-vindo",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "frame",
+      "title": "Informação",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#informar",
+      "digress_in": "returns",
+      "dialog_node": "node_4_1647633570060",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_3_1647625603515",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bom dia! O que você vai querer comer hoje? Tenho muitas variedades."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "conditions": "now().before('12:00:00')",
+      "dialog_node": "response_10_1647625090295"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu pedido foi  $bebidas do sabor $sabor_suco."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1647625603515",
+      "conditions": "$bebidas==\"suco\"",
+      "dialog_node": "response_10_1647640417468",
+      "previous_sibling": "response_2_1647640389124"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu pedido foi $salgado do sabor $sabor_salgado, $bebidas do sabor $sabor_refrigerante"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1647625603515",
+      "conditions": "$salgado and $bebidas==\"refrigerante\"",
+      "dialog_node": "response_2_1647640350243",
+      "previous_sibling": "response_4_1647639638748"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Se pedido foi $salgado do sabor $sabor_salgado."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1647625603515",
+      "conditions": "$salgado",
+      "dialog_node": "response_2_1647640389124",
+      "previous_sibling": "response_2_1647640350243"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu pedido foi $salgado do sabor $sabor_salgado, $bebidas do sabor $sabor_suco."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1647625603515",
+      "conditions": "$salgado and $bebidas==\"suco\"",
+      "dialog_node": "response_4_1647639638748",
+      "previous_sibling": "response_4_1647642339308"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu $bebidas do sabor $sabor_refrigerante."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1647625603515",
+      "conditions": "$bebidas==\"refrigerante\"",
+      "dialog_node": "response_4_1647640447402",
+      "previous_sibling": "response_10_1647640417468"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1647625603515",
+      "context": {
+        "context_eraser": "<?context.clear()?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#sair",
+      "dialog_node": "response_4_1647642339308",
+      "previous_sibling": "handler_9_1647633506812"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Boa Noite! O que você vai querer comer hoje? Tenho muitas variedades."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "conditions": "now().before('23:59:59')",
+      "dialog_node": "response_7_1647625187755",
+      "previous_sibling": "response_9_1647625161209"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Boa Tarde! O que você vai querer comer hoje? Tenho muitas variedades."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "conditions": "now().before('18:00:00')",
+      "dialog_node": "response_9_1647625161209",
+      "previous_sibling": "response_10_1647625090295"
+    },
+    {
+      "type": "slot",
+      "title": "slot_10_1647625631981_copy",
+      "output": {},
+      "parent": "node_3_1647625603515",
+      "variable": "$salgado",
+      "conditions": "",
+      "dialog_node": "slot_10_1647625631981_copy",
+      "previous_sibling": "response_4_1647640447402"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1647625603515",
+      "variable": "$sabor_suco",
+      "conditions": "$bebidas==\"suco\"",
+      "dialog_node": "slot_1_1647631307994",
+      "previous_sibling": "slot_2_1647626874415"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1647633570060",
+      "variable": "$tipo_informacao",
+      "conditions": "!$tipo_informacao",
+      "dialog_node": "slot_1_1647633678193"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1647625603515",
+      "variable": "$bebidas",
+      "conditions": "",
+      "dialog_node": "slot_2_1647626874415",
+      "previous_sibling": "slot_3_1647628531568"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1647625603515",
+      "variable": "$sabor_salgado",
+      "conditions": "$salgado==\"enroladinho\"",
+      "dialog_node": "slot_3_1647628531568",
+      "previous_sibling": "slot_10_1647625631981_copy"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1647625603515",
+      "variable": "$tipo_entrega",
+      "conditions": "$salgado || $bebidas",
+      "dialog_node": "slot_4_1647632263520",
+      "previous_sibling": "slot_7_1647631660613"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1647633570060",
+      "variable": "$tipo_informacao",
+      "dialog_node": "slot_6_1647636838001",
+      "previous_sibling": "slot_1_1647633678193"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1647625603515",
+      "variable": "$sabor_refrigerante",
+      "conditions": "$bebidas==\"refrigerante\"",
+      "dialog_node": "slot_7_1647631660613",
+      "previous_sibling": "slot_1_1647631307994"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1647625603515",
+      "variable": "$cep",
+      "conditions": "$tipo_entrega==\"delivery\"",
+      "dialog_node": "slot_9_1647632629358",
+      "previous_sibling": "slot_4_1647632263520"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Lanchonete",
+  "language": "pt-br",
+  "description": "O Chatbot deverá ser capaz de vender salgados e bebidas, oferecer serviços de Delivery e Drive Thru."
+}
